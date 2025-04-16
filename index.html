@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+            integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <link rel="stylesheet" href="css/options.css" />
+        <link rel="stylesheet" href="css/color_input.css" />
+        <link rel="stylesheet" href="css/checkbox.css" />
+        <link rel="stylesheet" href="css/select.css" />
+    </head>
+    <body>
+        <div onclick='$("#options").slideToggle("slow");' id="options_toggle">
+            <i class="bi bi-gear-wide"></i>
+        </div>
+        <div id="options">
+            <div>
+                <p1 class="label">Load 5e spell </p1>
+                <select id="spellList" onchange="load_selected()"></select>
+            </div>
+            <br /><br />
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k1-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k1-label" class="label">Spell Level (k = 1)</p1>
+                <input
+                    type="color"
+                    id="k1-color"
+                    onchange="adjust_attr()"
+                    value="#146152"
+                />
+
+                <select id="k-1" onchange="adjust_attr()"></select>
+            </div>
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k2-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k2-label" class="label">School (k = 2)</p1>
+                <input
+                    type="color"
+                    id="k2-color"
+                    onchange="adjust_attr()"
+                    value="#44803F"
+                />
+
+                <select id="k-2" onchange="adjust_attr()"></select>
+            </div>
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k3-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k3-label" class="label">Damage Type (k = 3)</p1>
+                <input
+                    type="color"
+                    id="k3-color"
+                    onchange="adjust_attr()"
+                    value="#B4CF66"
+                />
+
+                <select id="k-3" onchange="adjust_attr()"></select>
+            </div>
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k4-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k4-label" class="label">Area (k = 4)</p1>
+                <input
+                    type="color"
+                    id="k4-color"
+                    onchange="adjust_attr()"
+                    value="#FFEC5C"
+                />
+
+                <select id="k-4" onchange="adjust_attr()"></select>
+            </div>
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k5-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k5-label" class="label">Range (k = 5)</p1>
+                <input
+                    type="color"
+                    id="k5-color"
+                    onchange="adjust_attr()"
+                    value="#FF5A33"
+                />
+
+                <select id="k-5" onchange="adjust_attr()"></select>
+            </div>
+
+            <div class="spellopt">
+                <input
+                    type="checkbox"
+                    id="k6-enabled"
+                    onchange="adjust_attr()"
+                    checked
+                />
+                <p1 id="k6-label" class="label">Duration (k = 6)</p1>
+                <input
+                    type="color"
+                    id="k6-color"
+                    onchange="adjust_attr()"
+                    value="#5e9fc4"
+                />
+
+                <select id="k-6" onchange="adjust_attr()"></select>
+            </div>
+            <br />
+
+            <input
+                type="range"
+                id="rotation"
+                name="rotation"
+                value="0"
+                min="0"
+                max="100"
+                oninput="adjust_attr()"
+            />
+            <label for="rotation">Rotation</label>
+            <br />
+            <input
+                type="checkbox"
+                id="toggle_background"
+                name="toggle_background"
+                value="toggle_background"
+                onchange="adjust_attr()"
+                checked
+            />
+            <label for="toggle_background">Background lines</label><br />
+            <input
+                type="checkbox"
+                id="toggle_dots"
+                name="toggle_dots"
+                value="toggle_dots"
+                onchange="adjust_attr()"
+                checked
+            />
+            <label for="toggle_dots">Dots</label><br />
+        </div>
+        <div id="canvasWrapper">
+            <canvas id="spellCanvas"></canvas>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+            integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="js/const.js"></script>
+        <script src="js/render.js"></script>
+        <script src="js/file.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

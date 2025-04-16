@@ -1,0 +1,49 @@
+#options {
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    background-color: #555;
+    border: 1px solid #666;
+    z-index: 1;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    #options {
+        width: 100vw;
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+#options_toggle {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 22px;
+    padding: 4px;
+}
+#options_toggle:hover {
+    transition-duration: 200ms;
+    background-color: #333;
+}
+select {
+    width: 150px;
+}
+.label {
+    display: inline-block;
+    width: 150px;
+}
+.spellopt {
+    height: 25px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
