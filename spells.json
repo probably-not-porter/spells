@@ -1,118 +1,430 @@
 {
     "1": {
-        "0": 0,
-        "1": 1,
-        "2": 2,
-        "3": 3,
-        "4": 4,
-        "5": 5,
-        "6": 6,
-        "7": 7,
-        "8": 8,
-        "9": 9
+        "0": {
+            "value": 0,
+            "sound": "C"
+        },
+        "1": {
+            "value": 1,
+            "sound": "S"
+        },
+        "2": {
+            "value": 2,
+            "sound": "H"
+        },
+        "3": {
+            "value": 3,
+            "sound": "L"
+        },
+        "4": {
+            "value": 4,
+            "sound": "V"
+        },
+        "5": {
+            "value": 5,
+            "sound": "T"
+        },
+        "6": {
+            "value": 6,
+            "sound": "R"
+        },
+        "7": {
+            "value": 7,
+            "sound": "M"
+        },
+        "8": {
+            "value": 8,
+            "sound": "N"
+        },
+        "9": {
+            "value": 9,
+            "sound": "Xy"
+        }
     },
     "2": {
-        "Abjuration": 0,
-        "Conjuration": 1,
-        "Divination": 2,
-        "Enchantment": 3,
-        "Evocation": 4,
-        "Illusion": 5,
-        "Necromancy": 6,
-        "Transmutation": 7
+        "Abjuration": {
+            "value": 0,
+            "sound": "A"
+        },
+        "Conjuration": {
+            "value": 1,
+            "sound": "E"
+        },
+        "Divination": {
+            "value": 2,
+            "sound": "I"
+        },
+        "Enchantment": {
+            "value": 3,
+            "sound": "O"
+        },
+        "Evocation": {
+            "value": 4,
+            "sound": "U"
+        },
+        "Illusion": {
+            "value": 5,
+            "sound": "Ai"
+        },
+        "Necromancy": {
+            "value": 6,
+            "sound": "Ou"
+        },
+        "Transmutation": {
+            "value": 7,
+            "sound": "Ie"
+        }
     },
     "3": {
-        "None": null,
-        "Acid": 0,
-        "Bludgeoning": 1,
-        "Cold": 2,
-        "Fire": 3,
-        "Force": 4,
-        "Lightning": 5,
-        "Necrotic": 6,
-        "Piercing": 7,
-        "Poison": 8,
-        "Psychic": 9,
-        "Radiant": 10,
-        "Slashing": 11,
-        "Thunder": 12
+        "None": {
+            "value": null,
+            "sound": "'"
+        },
+        "Acid": {
+            "value": 0,
+            "sound": "Cid"
+        },
+        "Bludgeoning": {
+            "value": 1,
+            "sound": "Deg"
+        },
+        "Cold": {
+            "value": 2,
+            "sound": "Lod"
+        },
+        "Fire": {
+            "value": 3,
+            "sound": "Ire"
+        },
+        "Force": {
+            "value": 4,
+            "sound": "Ton"
+        },
+        "Lightning": {
+            "value": 5,
+            "sound": "Nin"
+        },
+        "Necrotic": {
+            "value": 6,
+            "sound": "Rho"
+        },
+        "Piercing": {
+            "value": 7,
+            "sound": "Ix"
+        },
+        "Poison": {
+            "value": 8,
+            "sound": "Nis"
+        },
+        "Psychic": {
+            "value": 9,
+            "sound": "Char"
+        },
+        "Radiant": {
+            "value": 10,
+            "sound": "Nat"
+        },
+        "Slashing": {
+            "value": 11,
+            "sound": "Sih"
+        },
+        "Thunder": {
+            "value": 12,
+            "sound": "Der"
+        }
     },
     "4": {
-        "None": null,
-        "cone (15)": 0,
-        "cone (30)": 1,
-        "cone (40)": 2,
-        "cone (60)": 3,
-        "cube (10)": 4,
-        "cube (100)": 5,
-        "cube (15)": 6,
-        "cube (150)": 7,
-        "cube (20)": 8,
-        "cube (200)": 9,
-        "cube (2500)": 10,
-        "cube (30)": 11,
-        "cube (40)": 12,
-        "cube (40000)": 13,
-        "cube (5)": 14,
-        "cube (5280)": 15,
-        "cylinder (10)": 16,
-        "cylinder (20)": 17,
-        "cylinder (40)": 18,
-        "cylinder (5)": 19,
-        "cylinder (50)": 20,
-        "cylinder (60)": 21,
-        "line (100)": 22,
-        "line (50)": 23,
-        "line (60)": 24,
-        "line (90)": 25,
-        "sphere (10)": 26,
-        "sphere (100)": 27,
-        "sphere (15)": 28,
-        "sphere (20)": 29,
-        "sphere (30)": 30,
-        "sphere (360)": 31,
-        "sphere (40)": 32,
-        "sphere (5)": 33,
-        "sphere (60)": 34
+        "None": {
+            "value": null,
+            "sound": "'"
+        },
+        "cone (15)": {
+            "value": 0,
+            "sound": "Nu"
+        },
+        "cone (30)": {
+            "value": 1,
+            "sound": "Ne"
+        },
+        "cone (40)": {
+            "value": 2,
+            "sound": "Né"
+        },
+        "cone (60)": {
+            "value": 3,
+            "sound": "No"
+        },
+        "cube (10)": {
+            "value": 4,
+            "sound": "Be"
+        },
+        "cube (100)": {
+            "value": 5,
+            "sound": "Bi"
+        },
+        "cube (15)": {
+            "value": 6,
+            "sound": "Bé"
+        },
+        "cube (150)": {
+            "value": 7,
+            "sound": "Ba"
+        },
+        "cube (20)": {
+            "value": 8,
+            "sound": "Bo"
+        },
+        "cube (200)": {
+            "value": 9,
+            "sound": "Bai"
+        },
+        "cube (2500)": {
+            "value": 10,
+            "sound": "Boé"
+        },
+        "cube (30)": {
+            "value": 11,
+            "sound": "Bor"
+        },
+        "cube (40)": {
+            "value": 12,
+            "sound": "Boe"
+        },
+        "cube (40000)": {
+            "value": 13,
+            "sound": "Bie"
+        },
+        "cube (5)": {
+            "value": 14,
+            "sound": "Bu"
+        },
+        "cube (5280)": {
+            "value": 15,
+            "sound": "Bae"
+        },
+        "cylinder (10)": {
+            "value": 16,
+            "sound": "Xe"
+        },
+        "cylinder (20)": {
+            "value": 17,
+            "sound": "Xé"
+        },
+        "cylinder (40)": {
+            "value": 18,
+            "sound": "Xo"
+        },
+        "cylinder (5)": {
+            "value": 19,
+            "sound": "Xu"
+        },
+        "cylinder (50)": {
+            "value": 20,
+            "sound": "Xi"
+        },
+        "cylinder (60)": {
+            "value": 21,
+            "sound": "Xa"
+        },
+        "line (100)": {
+            "value": 22,
+            "sound": "Lo"
+        },
+        "line (50)": {
+            "value": 23,
+            "sound": "Lu"
+        },
+        "line (60)": {
+            "value": 24,
+            "sound": "Le"
+        },
+        "line (90)": {
+            "value": 25,
+            "sound": "Lé"
+        },
+        "sphere (10)": {
+            "value": 26,
+            "sound": "Se"
+        },
+        "sphere (100)": {
+            "value": 27,
+            "sound": "Sa"
+        },
+        "sphere (15)": {
+            "value": 28,
+            "sound": "Sé"
+        },
+        "sphere (20)": {
+            "value": 29,
+            "sound": "So"
+        },
+        "sphere (30)": {
+            "value": 30,
+            "sound": "Sor"
+        },
+        "sphere (360)": {
+            "value": 31,
+            "sound": "Sai"
+        },
+        "sphere (40)": {
+            "value": 32,
+            "sound": "Soe"
+        },
+        "sphere (5)": {
+            "value": 33,
+            "sound": "Su"
+        },
+        "sphere (60)": {
+            "value": 34,
+            "sound": "Si"
+        }
     },
     "5": {
-        "1 mile": 0,
-        "10 feet": 1,
-        "100 feet": 2,
-        "120 feet": 3,
-        "150 feet": 4,
-        "30 feet": 5,
-        "300 feet": 6,
-        "5 feet": 7,
-        "500 feet": 8,
-        "500 miles": 9,
-        "60 feet": 10,
-        "90 feet": 11,
-        "Self": 12,
-        "Sight": 13,
-        "Special": 14,
-        "Touch": 15,
-        "Unlimited": 16
+        "1 mile": {
+            "value": 0,
+            "sound": "Yp"
+        },
+        "10 feet": {
+            "value": 1,
+            "sound": "Spul"
+        },
+        "100 feet": {
+            "value": 2,
+            "sound": "Spon"
+        },
+        "120 feet": {
+            "value": 3,
+            "sound": "Mul"
+        },
+        "150 feet": {
+            "value": 4,
+            "sound": "Nosin"
+        },
+        "30 feet": {
+            "value": 5,
+            "sound": "Usin"
+        },
+        "300 feet": {
+            "value": 6,
+            "sound": "Sphin"
+        },
+        "5 feet": {
+            "value": 7,
+            "sound": "Wosin"
+        },
+        "500 feet": {
+            "value": 8,
+            "sound": "Sin"
+        },
+        "500 miles": {
+            "value": 9,
+            "sound": "Qul"
+        },
+        "60 feet": {
+            "value": 10,
+            "sound": "Wyn"
+        },
+        "90 feet": {
+            "value": 11,
+            "sound": "Ylar"
+        },
+        "Self": {
+            "value": 12,
+            "sound": "Por"
+        },
+        "Sight": {
+            "value": 13,
+            "sound": "Tor"
+        },
+        "Special": {
+            "value": 14,
+            "sound": "Intix"
+        },
+        "Touch": {
+            "value": 15,
+            "sound": "Lix"
+        },
+        "Unlimited": {
+            "value": 16,
+            "sound": "Ash"
+        }
     },
     "6": {
-        "1 hour": 0,
-        "1 minute": 1,
-        "1 round": 2,
-        "10 days": 3,
-        "10 minutes": 4,
-        "24 hours": 5,
-        "30 days": 6,
-        "7 days": 7,
-        "8 hours": 8,
-        "Instantaneous": 9,
-        "Special": 10,
-        "Until dispelled": 11,
-        "Up to 1 hour": 12,
-        "Up to 1 minute": 13,
-        "Up to 1 round": 14,
-        "Up to 10 minutes": 15,
-        "Up to 2 hours": 16,
-        "Up to 24 hours": 17,
-        "Up to 8 hours": 18
+        "1 hour": {
+            "value": 0,
+            "sound": "A"
+        },
+        "1 minute": {
+            "value": 1,
+            "sound": "E"
+        },
+        "1 round": {
+            "value": 2,
+            "sound": "I"
+        },
+        "10 days": {
+            "value": 3,
+            "sound": "Y"
+        },
+        "10 minutes": {
+            "value": 4,
+            "sound": "S"
+        },
+        "24 hours": {
+            "value": 5,
+            "sound": "L"
+        },
+        "30 days": {
+            "value": 6,
+            "sound": "Ai"
+        },
+        "7 days": {
+            "value": 7,
+            "sound": "Ei"
+        },
+        "8 hours": {
+            "value": 8,
+            "sound": "Iy"
+        },
+        "Instantaneous": {
+            "value": 9,
+            "sound": ""
+        },
+        "Special": {
+            "value": 10,
+            "sound": "Yl"
+        },
+        "Until dispelled": {
+            "value": 11,
+            "sound": "Is"
+        },
+        "Up to 1 hour": {
+            "value": 12,
+            "sound": "Si"
+        },
+        "Up to 1 minute": {
+            "value": 13,
+            "sound": "Se"
+        },
+        "Up to 1 round": {
+            "value": 14,
+            "sound": "Es"
+        },
+        "Up to 10 minutes": {
+            "value": 15,
+            "sound": "Ly"
+        },
+        "Up to 2 hours": {
+            "value": 16,
+            "sound": "Ay"
+        },
+        "Up to 24 hours": {
+            "value": 17,
+            "sound": "Yi"
+        },
+        "Up to 8 hours": {
+            "value": 18,
+            "sound": "Os"
+        }
     }
 }

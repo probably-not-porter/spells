@@ -7,7 +7,7 @@ async function get_attr_lists() {
             for (let attr in json[item]) {
                 var option = document.createElement("option");
                 option.setAttribute("value", attr);
-                option.text = `${attr} (n = ${json[item][attr]})`;
+                option.text = `${attr} (n = ${json[item][attr]["value"]})`;
                 selectList.appendChild(option);
             }
         }

@@ -5,14 +5,17 @@ function draw() {
     canvas.height = size;
 
     $.getJSON("spells.json", function (json) {
+        console.log(
+            `${json[1][attr_dropdowns[1].value]["sound"]}${json[2][attr_dropdowns[2].value]["sound"]}${json[3][attr_dropdowns[3].value]["sound"]}${json[4][attr_dropdowns[4].value]["sound"]}${json[5][attr_dropdowns[5].value]["sound"]}${json[6][attr_dropdowns[6].value]["sound"]}`,
+        );
         // get K vals from dropdown menus
         kArr = [
-            json[1][attr_dropdowns[1].value],
-            json[2][attr_dropdowns[2].value],
-            json[3][attr_dropdowns[3].value],
-            json[4][attr_dropdowns[4].value],
-            json[5][attr_dropdowns[5].value],
-            json[6][attr_dropdowns[6].value],
+            json[1][attr_dropdowns[1].value]["value"],
+            json[2][attr_dropdowns[2].value]["value"],
+            json[3][attr_dropdowns[3].value]["value"],
+            json[4][attr_dropdowns[4].value]["value"],
+            json[5][attr_dropdowns[5].value]["value"],
+            json[6][attr_dropdowns[6].value]["value"],
         ];
         // get x,y points for drawing
         dotArray = buildDotArr(centerX, centerY, radius);
