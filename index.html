@@ -34,178 +34,184 @@
         <div id="options">
             <h2>Spellwriter</h2>
             <!--######## SELECT A PRE-DEFINED 5E CLASS FROM API ########-->
-            <div class="spellopt">
-                <p1 class="label">Load 5e spell </p1>
-                <select id="spellList" onchange="load_selected()"></select>
-            </div><br /><br />
+            <div class="optcat">
+                <h3>Load 5e spell</h3>
+                <div class="spellopt">
+                    <select id="spellList" onchange="load_selected()"></select>
+                </div>
+            </div><br>
 
             <!--######## CUSTOM SETTINGS ########-->
-            <!--######## SPELL LEVEL K=1 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k1-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k1-label" class="label">Spell Level (k = 1)</p1>
-                <input
-                    type="color"
-                    id="k1-color"
-                    onchange="draw()"
-                    value="#146152"
-                />
+            <div class="optcat">
+                <h3>Spell Attributes</h3>
+                <!--######## SPELL LEVEL K=1 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k1-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k1-label" class="label">Spell Level (k = 1)</p1>
+                    <input
+                        type="color"
+                        id="k1-color"
+                        onchange="draw()"
+                        value="#146152"
+                    />
 
-                <select id="k-1" onchange="adjust_attr()"></select>
-            </div>
+                    <select id="k-1" onchange="adjust_attr()"></select>
+                </div>
 
-            <!--######## SCHOOL K=2 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k2-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k2-label" class="label">School (k = 2)</p1>
-                <input
-                    type="color"
-                    id="k2-color"
-                    onchange="draw()"
-                    value="#44803F"
-                />
+                <!--######## SCHOOL K=2 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k2-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k2-label" class="label">School (k = 2)</p1>
+                    <input
+                        type="color"
+                        id="k2-color"
+                        onchange="draw()"
+                        value="#44803F"
+                    />
 
-                <select id="k-2" onchange="adjust_attr()"></select>
-            </div>
+                    <select id="k-2" onchange="adjust_attr()"></select>
+                </div>
 
-            <!--######## DAMAGE TYPE K=3 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k3-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k3-label" class="label">Damage Type (k = 3)</p1>
-                <input
-                    type="color"
-                    id="k3-color"
-                    onchange="draw()"
-                    value="#B4CF66"
-                />
+                <!--######## DAMAGE TYPE K=3 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k3-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k3-label" class="label">Damage Type (k = 3)</p1>
+                    <input
+                        type="color"
+                        id="k3-color"
+                        onchange="draw()"
+                        value="#B4CF66"
+                    />
 
-                <select id="k-3" onchange="adjust_attr()"></select>
-            </div>
+                    <select id="k-3" onchange="adjust_attr()"></select>
+                </div>
 
-            <!--######## AREA K=4 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k4-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k4-label" class="label">Area (k = 4)</p1>
-                <input
-                    type="color"
-                    id="k4-color"
-                    onchange="draw()"
-                    value="#FFEC5C"
-                />
+                <!--######## AREA K=4 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k4-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k4-label" class="label">Area (k = 4)</p1>
+                    <input
+                        type="color"
+                        id="k4-color"
+                        onchange="draw()"
+                        value="#FFEC5C"
+                    />
 
-                <select id="k-4" onchange="adjust_attr()"></select>
-            </div>
+                    <select id="k-4" onchange="adjust_attr()"></select>
+                </div>
 
-            <!--######## RANGE K=5 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k5-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k5-label" class="label">Range (k = 5)</p1>
-                <input
-                    type="color"
-                    id="k5-color"
-                    onchange="draw()"
-                    value="#FF5A33"
-                />
+                <!--######## RANGE K=5 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k5-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k5-label" class="label">Range (k = 5)</p1>
+                    <input
+                        type="color"
+                        id="k5-color"
+                        onchange="draw()"
+                        value="#FF5A33"
+                    />
 
-                <select id="k-5" onchange="adjust_attr()"></select>
-            </div>
+                    <select id="k-5" onchange="adjust_attr()"></select>
+                </div>
 
-            <!--######## DURATION K=6 ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="k6-enabled"
-                    onchange="adjust_attr()"
-                    checked
-                />
-                <p1 id="k6-label" class="label">Duration (k = 6)</p1>
-                <input
-                    type="color"
-                    id="k6-color"
-                    onchange="draw()"
-                    value="#5e9fc4"
-                />
+                <!--######## DURATION K=6 ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="k6-enabled"
+                        onchange="adjust_attr()"
+                        checked
+                    />
+                    <p1 id="k6-label" class="label">Duration (k = 6)</p1>
+                    <input
+                        type="color"
+                        id="k6-color"
+                        onchange="draw()"
+                        value="#5e9fc4"
+                    />
 
-                <select id="k-6" onchange="adjust_attr()"></select>
-            </div>
-            <br />
+                    <select id="k-6" onchange="adjust_attr()"></select>
+                </div>
+            </div><br>
 
             <!--######## AESTHETIC SETTINGS ########-->
-            <!--######## BACKGROUND LINES ########-->
-            <div class="spellopt">
+            <div class="optcat">
+                <h3>Appearance</h3>
+                <!--######## BACKGROUND LINES ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="toggle_background"
+                        name="toggle_background"
+                        value="toggle_background"
+                        onchange="draw()"
+                        checked
+                    />
+                    <label for="toggle_background" class="label">Background lines</label>
+                    <input
+                        type="color"
+                        id="background-color"
+                        onchange="draw()"
+                        value="#555555"
+                    />
+                </div>
+
+                <!--######## VERTEX DOTS ########-->
+                <div class="spellopt">
+                    <input
+                        type="checkbox"
+                        id="toggle_dots"
+                        name="toggle_dots"
+                        value="toggle_dots"
+                        onchange="draw()"
+                        checked
+                    />
+                    <label for="toggle_dots" class="label">Dots</label>
+                    <input
+                        type="color"
+                        id="dots-color"
+                        onchange="draw()"
+                        value="#000"
+                    />
+                </div><br/>
+
+                <!--######## DIAGRAM ROTATION ########-->
                 <input
-                    type="checkbox"
-                    id="toggle_background"
-                    name="toggle_background"
-                    value="toggle_background"
-                    onchange="draw()"
-                    checked
+                    type="range"
+                    id="rotation"
+                    name="rotation"
+                    value="0"
+                    min="0"
+                    max="100"
+                    oninput="draw()"
                 />
-                <label for="toggle_background" class="label">Background lines</label>
-                <input
-                    type="color"
-                    id="background-color"
-                    onchange="draw()"
-                    value="#555555"
-                />
+                <label for="rotation">Rotation</label>
             </div>
-
-            <!--######## VERTEX DOTS ########-->
-            <div class="spellopt">
-                <input
-                    type="checkbox"
-                    id="toggle_dots"
-                    name="toggle_dots"
-                    value="toggle_dots"
-                    onchange="draw()"
-                    checked
-                />
-                <label for="toggle_dots" class="label">Dots</label>
-                <input
-                    type="color"
-                    id="dots-color"
-                    onchange="draw()"
-                    value="#000"
-                />
-            </div><br/>
-
-            <!--######## DIAGRAM ROTATION ########-->
-            <input
-                type="range"
-                id="rotation"
-                name="rotation"
-                value="0"
-                min="0"
-                max="100"
-                oninput="draw()"
-            />
-            <label for="rotation">Rotation</label>
-            <br />
 
         </div>
         <div id="canvasWrapper">
