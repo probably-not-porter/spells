@@ -53,7 +53,7 @@ function drawDots(ctx, dotArray, dotRadius) {
         pair = dotArray[i];
         ctx.beginPath();
         ctx.arc(pair[0], pair[1], dotRadius, 0, 2 * Math.PI);
-        ctx.fillStyle = "black";
+        ctx.fillStyle = dots_color.value;
         ctx.fill();
     }
 }
@@ -93,7 +93,7 @@ function drawSpellLines(ctx, dotArray, kArr) {
 
 function drawBackgroundLines(ctx, dotArray) {
     console.info("---> Draw spell (drawBackgroundLines)");
-    ctx.strokeStyle = "#555";
+    ctx.strokeStyle = background_color.value;
     // for each dot i
     for (let i = 0; i < dotArray.length; i++) {
         // draw a line to each other dot

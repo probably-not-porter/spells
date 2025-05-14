@@ -30,7 +30,10 @@ const attr_colors = [
     document.getElementById("k6-color"),
 ];
 const background_toggle = document.getElementById("toggle_background");
+const background_color = document.getElementById("background-color");
 const dots_toggle = document.getElementById("toggle_dots");
+const dots_color = document.getElementById("dots-color");
+
 const rotation_slider = document.getElementById("rotation");
 
 // ================ FILE OPTIONS =================
