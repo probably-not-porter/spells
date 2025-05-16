@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
 * {
     font-family: "Roboto";
 }
@@ -24,11 +25,27 @@ body {
     width: 80vmin;
     height: 80vmin;
 }
+#spellname {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    top: 90vmin;
+    font-size: 40px;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 @media only screen and (max-width: 700px) {
     #spellCanvas {
         height: 40vh;
         width: 40vh;
         margin-top: 5vh;
+    }
+    #spellname {
+        position: absolute;
+        left: 0px;
+        width: 100vw;
+        top: 48vh;
     }
 }
 h2 {

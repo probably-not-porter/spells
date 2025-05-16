@@ -39,7 +39,8 @@
                 <div class="spellopt">
                     <select id="spellList" onchange="load_selected()"></select>
                 </div>
-            </div><br>
+            </div>
+            <br />
 
             <!--######## CUSTOM SETTINGS ########-->
             <div class="optcat">
@@ -157,7 +158,8 @@
 
                     <select id="k-6" onchange="adjust_attr()"></select>
                 </div>
-            </div><br>
+            </div>
+            <br />
 
             <!--######## AESTHETIC SETTINGS ########-->
             <div class="optcat">
@@ -172,7 +174,9 @@
                         onchange="draw()"
                         checked
                     />
-                    <label for="toggle_background" class="label">Background lines</label>
+                    <label for="toggle_background" class="label"
+                        >Background lines</label
+                    >
                     <input
                         type="color"
                         id="background-color"
@@ -198,24 +202,27 @@
                         onchange="draw()"
                         value="#000"
                     />
-                </div><br/>
+                </div>
 
                 <!--######## DIAGRAM ROTATION ########-->
-                <input
-                    type="range"
-                    id="rotation"
-                    name="rotation"
-                    value="0"
-                    min="0"
-                    max="100"
-                    oninput="draw()"
-                />
-                <label for="rotation">Rotation</label>
+                <div class="spellopt">
+                    <label for="rotation">Rotation</label>
+                    <input
+                        type="range"
+                        id="rotation"
+                        name="rotation"
+                        value="0"
+                        min="0"
+                        max="100"
+                        oninput="draw()"
+                    />
+                </div>
+                <br />
             </div>
-
         </div>
         <div id="canvasWrapper">
             <canvas id="spellCanvas"></canvas>
+            <span id="spellname"></span>
         </div>
 
         <script

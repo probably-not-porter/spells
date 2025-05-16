@@ -34,6 +34,8 @@ const background_color = document.getElementById("background-color");
 const dots_toggle = document.getElementById("toggle_dots");
 const dots_color = document.getElementById("dots-color");
 
+const spellname = document.getElementById("spellname");
+
 const rotation_slider = document.getElementById("rotation");
 
 // ================ FILE OPTIONS =================

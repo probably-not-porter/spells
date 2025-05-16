@@ -5,9 +5,17 @@ function draw() {
     canvas.height = size;
 
     $.getJSON("spells.json", function (json) {
-        console.log(
-            `${json[1][attr_dropdowns[1].value]["sound"]}${json[2][attr_dropdowns[2].value]["sound"]}${json[3][attr_dropdowns[3].value]["sound"]}${json[4][attr_dropdowns[4].value]["sound"]}${json[5][attr_dropdowns[5].value]["sound"]}${json[6][attr_dropdowns[6].value]["sound"]}`,
-        );
+        let spelltext = `${json[1][attr_dropdowns[1].value]["sound"]}${json[2][attr_dropdowns[2].value]["sound"]}${json[3][attr_dropdowns[3].value]["sound"]}-${json[4][attr_dropdowns[4].value]["sound"]}${json[5][attr_dropdowns[5].value]["sound"]}${json[6][attr_dropdowns[6].value]["sound"]}`;
+        spelltext = spelltext.replace("'-'", "");
+        spelltext = spelltext
+            .toLowerCase()
+            .split("'")
+            .map((str) => str.charAt(0).toUpperCase() + str.slice(1))
+            .join("'")
+            .split("-")
+            .map((str) => str.charAt(0).toUpperCase() + str.slice(1))
+            .join("-");
+        spellname.innerText = spelltext;
         // get K vals from dropdown menus
         kArr = [
             json[1][attr_dropdowns[1].value]["value"],
