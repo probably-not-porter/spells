@@ -3,6 +3,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Spellwriter</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
@@ -27,8 +28,15 @@
         <link rel="stylesheet" href="css/select.css" />
     </head>
     <body>
-        <div onclick='$("#options").slideToggle("slow");' id="options_toggle">
-            <i class="bi bi-gear-wide"></i>
+        <div style="left: 10px" onclick="toggle_menu()" id="options_toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        <div
+            style="left: 50px"
+            onclick="window.open('https://github.com/probably-not-porter/spellwriter')"
+            id="options_toggle"
+        >
+            <i class="bi bi-github"></i>
         </div>
 
         <div id="options">

@@ -1,7 +1,7 @@
 // ================ DOM OBJECTS =================
 const canvas = document.getElementById("spellCanvas");
 const spellList = document.getElementById("spellList");
-
+var menuOpen = false;
 const attr_dropdowns = [
     null,
     document.getElementById("k-1"),

@@ -15,7 +15,7 @@ function draw() {
             .split("-")
             .map((str) => str.charAt(0).toUpperCase() + str.slice(1))
             .join("-");
-        spellname.innerText = spelltext;
+        spellname.innerText = `"${spelltext}"`;
         // get K vals from dropdown menus
         kArr = [
             json[1][attr_dropdowns[1].value]["value"],
